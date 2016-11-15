@@ -13,8 +13,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           python-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        1.0.1
+Release:        1%{?dist}
 Summary:        Python client for Vitrage REST API
 
 License:        ASL 2.0
@@ -176,3 +176,5 @@ mv %{buildroot}%{_datadir}/vitrage.bash_completion %{buildroot}$bashcompdir/vitr
 %{_datadir}/bash-completion/completions/vitrage
 
 %changelog
+* Tue Nov 15 2016 Alan Pevec <alan.pevec@redhat.com> 1.0.1-1
+- Update to 1.0.1
