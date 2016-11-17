@@ -164,7 +164,7 @@ mv %{buildroot}%{_datadir}/vitrage.bash_completion %{buildroot}$bashcompdir/vitr
 %{_bindir}/vitrage-3
 %{_bindir}/vitrage-%{python3_version}
 %{python3_sitelib}/%{pypi_name}
-%{python3_sitelib}/python_%{pypi_name}-%{version}-py?.?.egg-info
+%{python3_sitelib}/python_%{pypi_name}-*-py?.?.egg-info
 %endif
 
 %files -n python-%{pypi_name}-doc
