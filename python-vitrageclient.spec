@@ -42,9 +42,10 @@ BuildRequires:  python-testtools
 
 Requires:       python-babel >= 2.3.4
 Requires:       python-cliff >= 1.15.0
-Requires:       python-keystoneauth1 >= 2.10.0
+Requires:       python-keystoneauth1 >= 2.18.0
 Requires:       python-pbr
-Requires:       python-oslo-utils >= 3.16.0
+Requires:       python-osc-lib >= 1.2.0
+Requires:       python-oslo-utils >= 3.18.0
 Requires:       python-oslo-log
 
 Requires:       %{name}-bash-completion = %{version}-%{release}
@@ -76,9 +77,10 @@ BuildRequires:  python3-testtools
 
 Requires:       python3-babel >= 2.3.4
 Requires:       python3-cliff >= 1.15.0
-Requires:       python3-keystoneauth1 >= 2.10.0
+Requires:       python3-keystoneauth1 >= 2.18.0
 Requires:       python3-pbr
-Requires:       python3-oslo-utils >= 3.16.0
+Requires:       python-osc-lib >= 1.2.0
+Requires:       python3-oslo-utils >= 3.18.0
 Requires:       python3-oslo-log
 
 %description -n python3-%{pypi_name}
