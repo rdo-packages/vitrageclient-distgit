@@ -33,7 +33,10 @@ and Command Line Interface (CLI) library.
 BuildRequires:  python-devel
 BuildRequires:  python-setuptools
 BuildRequires:  python-pbr
+BuildRequires:  python-cliff
 BuildRequires:  python-coverage
+BuildRequires:  python-iso8601
+BuildRequires:  python-mock
 BuildRequires:  python-subunit
 BuildRequires:  python-oslotest
 BuildRequires:  python-testrepository
@@ -42,6 +45,7 @@ BuildRequires:  python-testtools
 
 Requires:       python-babel >= 2.3.4
 Requires:       python-cliff >= 1.15.0
+Requires:       python-iso8601
 Requires:       python-keystoneauth1 >= 2.18.0
 Requires:       python-pbr
 Requires:       python-osc-lib >= 1.2.0
@@ -66,20 +70,22 @@ Summary:        Python client for Vitrage REST API
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr >= 0.6
-
+BuildRequires:  python3-cliff
 BuildRequires:  python3-coverage
+BuildRequires:  python3-iso8601
+BuildRequires:  python3-mock
 BuildRequires:  python3-subunit
 BuildRequires:  python3-oslotest
 BuildRequires:  python3-testrepository
 BuildRequires:  python3-testscenarios
 BuildRequires:  python3-testtools
 
-
 Requires:       python3-babel >= 2.3.4
 Requires:       python3-cliff >= 1.15.0
 Requires:       python3-keystoneauth1 >= 2.18.0
+Requires:       python3-iso8601
 Requires:       python3-pbr
-Requires:       python-osc-lib >= 1.2.0
+Requires:       python3-osc-lib >= 1.2.0
 Requires:       python3-oslo-utils >= 3.18.0
 Requires:       python3-oslo-log
 
