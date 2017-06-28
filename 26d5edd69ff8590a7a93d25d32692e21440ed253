@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9aa7fdbe_b6a43c58",
+        "filename": "python-vitrageclient.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2017-06-28T09:33:18Z",
+      "side": 1,
+      "message": "good catch, there might be more such (py2 dep in py3 subpakcage) issues and since we don\u0027t have py3 coverage in RDO, it gets only caught in Fedora autoqa e.g. https://taskotron.fedoraproject.org/artifacts/all/9340b2da-528b-11e7-b258-5254008e42f6/task_output/output.log",
+      "range": {
+        "startLine": 88,
+        "startChar": 22,
+        "endLine": 88,
+        "endChar": 23
+      },
+      "revId": "26d5edd69ff8590a7a93d25d32692e21440ed253",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
