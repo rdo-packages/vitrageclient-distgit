@@ -184,3 +184,4 @@ mv %{buildroot}%{_datadir}/vitrage.bash_completion %{buildroot}$bashcompdir/vitr
 %{_datadir}/bash-completion/completions/vitrage
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/python-vitrageclient/commit/?id=14b316317fe1e34510deb2a551abb87fa0befb35
