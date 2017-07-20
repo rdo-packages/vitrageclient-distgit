@@ -33,6 +33,7 @@ and Command Line Interface (CLI) library.
 BuildRequires:  python-devel
 BuildRequires:  python-setuptools
 BuildRequires:  python-pbr
+BuildRequires:  git
 BuildRequires:  python-cliff
 BuildRequires:  python-coverage
 BuildRequires:  python-iso8601
@@ -99,7 +100,7 @@ and Command Line Interface (CLI) library.
 Summary:       Documentation for python client for Vitrage REST API
 
 BuildRequires: python-sphinx
-BuildRequires: python2-oslo-sphinx >= 2.3.0
+BuildRequires: python-openstackdocstheme
 
 %description -n python-%{pypi_name}-doc
 Documentation for python client for Vitrage REST API. Includes python library
@@ -114,7 +115,7 @@ This package contains bash completion files for vitrage.
 
 
 %prep
-%autosetup -n %{name}-%{upstream_version}
+%autosetup -n %{name}-%{upstream_version} -S git
 
 # Let RPM handle the dependencies
 rm -f test-requirements.txt requirements.txt
@@ -127,9 +128,9 @@ rm -f test-requirements.txt requirements.txt
 %endif
 
 # generate html docs
-sphinx-build doc/source html
+%{__python2} setup.py build_sphinx -b html
 # remove the sphinx-build leftovers
-rm -rf html/.{doctrees,buildinfo}
+rm -rf doc/build/html/.{doctrees,buildinfo}
 
 
 %install
@@ -176,7 +177,7 @@ mv %{buildroot}%{_datadir}/vitrage.bash_completion %{buildroot}$bashcompdir/vitr
 %endif
 
 %files -n python-%{pypi_name}-doc
-%doc html
+%doc doc/build/html
 %license LICENSE
 
 %files bash-completion
