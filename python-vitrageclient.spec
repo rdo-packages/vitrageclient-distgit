@@ -35,7 +35,6 @@ BuildRequires:  python-setuptools
 BuildRequires:  python-pbr
 BuildRequires:  git
 BuildRequires:  python-cliff
-BuildRequires:  python-coverage
 BuildRequires:  python-iso8601
 BuildRequires:  python-mock
 BuildRequires:  python-subunit
@@ -72,7 +71,6 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr >= 0.6
 BuildRequires:  python3-cliff
-BuildRequires:  python3-coverage
 BuildRequires:  python3-iso8601
 BuildRequires:  python3-mock
 BuildRequires:  python3-subunit
