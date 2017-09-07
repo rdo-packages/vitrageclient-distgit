@@ -12,6 +12,10 @@
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
+%global common_desc \
+Python client for Vitrage REST API. Includes python library for Vitrage API \
+and Command Line Interface (CLI) library.
+
 Name:           python-%{pypi_name}
 Version:        XXX
 Release:        XXX
@@ -24,9 +28,7 @@ Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{upstream_versio
 BuildArch:      noarch
 
 %description
-Python client for Vitrage REST API. Includes python library for Vitrage API
-and Command Line Interface (CLI) library.
-
+%{common_desc}
 
 %package -n     python2-%{pypi_name}
 
@@ -58,8 +60,7 @@ Summary:        Python client for Vitrage REST API
 %{?python_provide:%python_provide python2-%{pypi_name}}
 
 %description -n python2-%{pypi_name}
-Python client for Vitrage REST API. Includes python library for Vitrage API
-and Command Line Interface (CLI) library.
+%{common_desc}
 
 %if 0%{?with_python3}
 # Python3 package
@@ -89,8 +90,7 @@ Requires:       python3-oslo-utils >= 3.20.0
 Requires:       python3-oslo-log
 
 %description -n python3-%{pypi_name}
-Python client for Vitrage REST API. Includes python library for Vitrage API
-and Command Line Interface (CLI) library.
+%{common_desc}
 %endif
 
 # Documentation package
