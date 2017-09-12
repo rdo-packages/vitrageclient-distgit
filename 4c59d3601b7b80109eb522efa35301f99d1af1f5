@@ -1,0 +1,8 @@
+Code-Review+2: Javier Peña <jpena@redhat.com>
+Workflow+1: Matthias Runge <mrunge@redhat.com>
+Verified+2: Jenkins CI <admin@rpmfactory.beta.rdoproject.org>
+Submitted-by: Jenkins CI <admin@rpmfactory.beta.rdoproject.org>
+Submitted-at: Tue, 12 Sep 2017 14:10:13 +0000
+Reviewed-on: https://review.rdoproject.org/r/9366
+Project: openstack/vitrageclient-distgit
+Branch: refs/heads/rpm-master
