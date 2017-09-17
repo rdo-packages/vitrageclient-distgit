@@ -79,6 +79,7 @@ BuildRequires:  python3-oslotest
 BuildRequires:  python3-testrepository
 BuildRequires:  python3-testscenarios
 BuildRequires:  python3-testtools
+BuildRequires:  openstack-macros
 
 Requires:       python3-babel >= 2.3.4
 Requires:       python3-cliff >= 2.8.0
@@ -116,7 +117,7 @@ This package contains bash completion files for vitrage.
 %autosetup -n %{name}-%{upstream_version} -S git
 
 # Let RPM handle the dependencies
-rm -f test-requirements.txt requirements.txt
+%py_req_cleanup
 
 
 %build
