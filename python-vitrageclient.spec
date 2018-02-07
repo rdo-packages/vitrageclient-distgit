@@ -32,27 +32,27 @@ BuildArch:      noarch
 
 %package -n     python2-%{pypi_name}
 
-BuildRequires:  python-devel
-BuildRequires:  python-setuptools
-BuildRequires:  python-pbr
+BuildRequires:  python2-devel
+BuildRequires:  python2-setuptools
+BuildRequires:  python2-pbr
 BuildRequires:  git
-BuildRequires:  python-cliff
-BuildRequires:  python-iso8601
-BuildRequires:  python-mock
-BuildRequires:  python-subunit
-BuildRequires:  python-oslotest
-BuildRequires:  python-testrepository
-BuildRequires:  python-testscenarios
-BuildRequires:  python-testtools
+BuildRequires:  python2-iso8601
+BuildRequires:  python2-mock
+BuildRequires:  python2-subunit
+BuildRequires:  python2-oslotest
+BuildRequires:  python2-testrepository
+BuildRequires:  python2-testtools
+BuildRequires:  python2-cliff
+BuildRequires:  python2-testscenarios
 
-Requires:       python-babel >= 2.3.4
-Requires:       python-cliff >= 2.8.0
-Requires:       python-iso8601
-Requires:       python-keystoneauth1 >= 3.0.1
-Requires:       python-pbr
-Requires:       python-osc-lib >= 1.7.0
-Requires:       python-oslo-utils >= 3.20.0
-Requires:       python-oslo-log
+Requires:       python2-babel >= 2.3.4
+Requires:       python2-iso8601
+Requires:       python2-keystoneauth1 >= 3.3.0
+Requires:       python2-pbr
+Requires:       python2-osc-lib >= 1.8.0
+Requires:       python2-oslo-utils >= 3.33.0
+Requires:       python2-oslo-log
+Requires:       python2-cliff >= 2.8.0
 
 Requires:       %{name}-bash-completion = %{version}-%{release}
 
@@ -83,11 +83,11 @@ BuildRequires:  openstack-macros
 
 Requires:       python3-babel >= 2.3.4
 Requires:       python3-cliff >= 2.8.0
-Requires:       python3-keystoneauth1 >= 3.0.1
+Requires:       python3-keystoneauth1 >= 3.3.0
 Requires:       python3-iso8601
 Requires:       python3-pbr
-Requires:       python3-osc-lib >= 1.7.0
-Requires:       python3-oslo-utils >= 3.20.0
+Requires:       python3-osc-lib >= 1.8.0
+Requires:       python3-oslo-utils >= 3.33.0
 Requires:       python3-oslo-log
 
 %description -n python3-%{pypi_name}
