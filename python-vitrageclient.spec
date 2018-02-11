@@ -17,8 +17,8 @@ Python client for Vitrage REST API. Includes python library for Vitrage API \
 and Command Line Interface (CLI) library.
 
 Name:           python-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        2.0.0
+Release:        1%{?dist}
 Summary:        Python client for Vitrage REST API
 
 License:        ASL 2.0
@@ -184,3 +184,6 @@ mv %{buildroot}%{_datadir}/vitrage.bash_completion %{buildroot}$bashcompdir/vitr
 %{_datadir}/bash-completion/completions/vitrage
 
 %changelog
+* Sun Feb 11 2018 RDO <dev@lists.rdoproject.org> 2.0.0-1
+- Update to 2.0.0
+
