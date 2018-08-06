@@ -47,9 +47,9 @@ BuildRequires:  python2-testscenarios
 
 Requires:       python2-babel >= 2.3.4
 Requires:       python2-iso8601
-Requires:       python2-keystoneauth1 >= 3.3.0
+Requires:       python2-keystoneauth1 >= 3.4.0
 Requires:       python2-pbr
-Requires:       python2-osc-lib >= 1.8.0
+Requires:       python2-osc-lib >= 1.10.0
 Requires:       python2-oslo-utils >= 3.33.0
 Requires:       python2-oslo-log
 Requires:       python2-cliff >= 2.8.0
@@ -83,10 +83,10 @@ BuildRequires:  openstack-macros
 
 Requires:       python3-babel >= 2.3.4
 Requires:       python3-cliff >= 2.8.0
-Requires:       python3-keystoneauth1 >= 3.3.0
+Requires:       python3-keystoneauth1 >= 3.4.0
 Requires:       python3-iso8601
 Requires:       python3-pbr
-Requires:       python3-osc-lib >= 1.8.0
+Requires:       python3-osc-lib >= 1.10.0
 Requires:       python3-oslo-utils >= 3.33.0
 Requires:       python3-oslo-log
 
