@@ -9,8 +9,8 @@
 %global __python2 /usr/bin/python
 %endif
 
-
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?py_req_cleanup: %define py_req_cleanup rm -rf {,test}-requirements.txt}
 
 %global common_desc \
 Python client for Vitrage REST API. Includes python library for Vitrage API \
