@@ -10,7 +10,7 @@
 %endif
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
-%{!?py_req_cleanup: %define py_req_cleanup rm -rf {,test}-requirements.txt}
+%{!?py_req_cleanup: %global py_req_cleanup rm -rf {,test-}requirements.txt}
 
 %global common_desc \
 Python client for Vitrage REST API. Includes python library for Vitrage API \
