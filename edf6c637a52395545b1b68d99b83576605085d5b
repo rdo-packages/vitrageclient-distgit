@@ -16,6 +16,24 @@
       "revId": "edf6c637a52395545b1b68d99b83576605085d5b",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_bae896e3",
+        "filename": "python-vitrageclient.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-10-30T08:38:45Z",
+      "side": 1,
+      "message": "Thanks for raising it. AFAIR from discussion from past, there will not be upgrade path from python2 to python3. Fedora or rhel \u003e 7 will only have python3 RDO packages, But will check again with other members. or if u are pointing some other use case please raise so we can discuss that as well.",
+      "parentUuid": "9abe1de1_ba21b64f",
+      "revId": "edf6c637a52395545b1b68d99b83576605085d5b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
