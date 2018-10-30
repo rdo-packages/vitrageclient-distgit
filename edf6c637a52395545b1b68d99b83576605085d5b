@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_3d000001",
+        "filename": "python-vitrageclient.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-10-30T18:14:20Z",
+      "side": 1,
+      "message": "I see no clear indications in Fedora and the only response i get in #fedora-python is \"it\u0027s up to you\", but i think it\u0027s a good idea to add the obsoletes in client packages provinding executables. I\u0027ve written some lines about the migration path in https://review.rdoproject.org/etherpad/p/py3_conversion_status .",
+      "parentUuid": "9abe1de1_bae896e3",
+      "revId": "edf6c637a52395545b1b68d99b83576605085d5b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_bacf767e",
         "filename": "python-vitrageclient.spec",
         "patchSetId": 1
