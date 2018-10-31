@@ -73,6 +73,24 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_dda8e4dd",
+        "filename": "python-vitrageclient.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-10-31T03:14:37Z",
+      "side": 1,
+      "message": "noted, will wait for mrunge to comment before updating patch.",
+      "parentUuid": "9abe1de1_bd3bf0d0",
+      "revId": "edf6c637a52395545b1b68d99b83576605085d5b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_bacf767e",
         "filename": "python-vitrageclient.spec",
         "patchSetId": 1
