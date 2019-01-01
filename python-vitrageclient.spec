@@ -134,3 +134,4 @@ export PYTHON=%{pyver_bin}
 %{_datadir}/bash-completion/completions/vitrage
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/python-vitrageclient/commit/?id=ab81474e38b8f5512b4ea7fb331f4d5b1490ee1e
