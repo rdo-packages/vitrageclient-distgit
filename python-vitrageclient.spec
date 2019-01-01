@@ -41,7 +41,9 @@ BuildRequires:  git
 BuildRequires:  python%{pyver}-iso8601
 BuildRequires:  python%{pyver}-mock
 BuildRequires:  python%{pyver}-subunit
+BuildRequires:  pydot
 BuildRequires:  python%{pyver}-oslotest
+BuildRequires:  python-networkx
 BuildRequires:  python%{pyver}-testrepository
 BuildRequires:  python%{pyver}-testtools
 BuildRequires:  python%{pyver}-cliff
@@ -51,6 +53,8 @@ Requires:       python%{pyver}-babel >= 2.3.4
 Requires:       python%{pyver}-iso8601
 Requires:       python%{pyver}-keystoneauth1 >= 3.4.0
 Requires:       python%{pyver}-pbr
+Requires:       pydot
+Requires:       python-networkx
 Requires:       python%{pyver}-osc-lib >= 1.10.0
 Requires:       python%{pyver}-oslo-utils >= 3.33.0
 Requires:       python%{pyver}-oslo-log
@@ -134,3 +138,4 @@ export PYTHON=%{pyver_bin}
 %{_datadir}/bash-completion/completions/vitrage
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/python-vitrageclient/commit/?id=ab81474e38b8f5512b4ea7fb331f4d5b1490ee1e
