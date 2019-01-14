@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ad0253b_d7593790",
+        "filename": "python-vitrageclient.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-01-14T06:19:43Z",
+      "side": 1,
+      "message": "this is not in stein-testing[1] somehow, need to add it.\n\n\n[1] https://github.com/redhat-openstack/rdoinfo/blob/master/deps.yml#L2860-L2867",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 21
+      },
+      "revId": "8ffc2a1c0952ddd7224860813e41c922fb54656f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ad0253b_f764334a",
+        "filename": "python-vitrageclient.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-01-14T06:19:43Z",
+      "side": 1,
+      "message": "ditto.",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 31
+      },
+      "revId": "8ffc2a1c0952ddd7224860813e41c922fb54656f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ad0253b_1760cf34",
+        "filename": "python-vitrageclient.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-01-14T06:19:43Z",
+      "side": 1,
+      "message": "need to move this to python-networkx for Centos and python%{pyver} for Fedora or Rhel \u003e 7",
+      "range": {
+        "startLine": 57,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 31
+      },
+      "revId": "8ffc2a1c0952ddd7224860813e41c922fb54656f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
