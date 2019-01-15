@@ -41,22 +41,37 @@ BuildRequires:  git
 BuildRequires:  python%{pyver}-iso8601
 BuildRequires:  python%{pyver}-mock
 BuildRequires:  python%{pyver}-subunit
+BuildRequires:  python%{pyver}-pydot
 BuildRequires:  python%{pyver}-oslotest
 BuildRequires:  python%{pyver}-testrepository
 BuildRequires:  python%{pyver}-testtools
 BuildRequires:  python%{pyver}-cliff
 BuildRequires:  python%{pyver}-testscenarios
 
+%if %{pyver} == 2
+BuildRequires:  python-networkx
+%else
+BuildRequires:  python%{pyver}-networkx
+%endif
+
 Requires:       python%{pyver}-babel >= 2.3.4
 Requires:       python%{pyver}-iso8601
 Requires:       python%{pyver}-keystoneauth1 >= 3.4.0
 Requires:       python%{pyver}-pbr
+Requires:       python%{pyver}-pydot
 Requires:       python%{pyver}-osc-lib >= 1.10.0
 Requires:       python%{pyver}-oslo-utils >= 3.33.0
 Requires:       python%{pyver}-oslo-log
 Requires:       python%{pyver}-cliff >= 2.8.0
 
 Requires:       %{name}-bash-completion = %{version}-%{release}
+
+%if %{pyver} == 2
+Requires:       python-networkx
+%else
+Requires:       python%{pyver}-networkx
+%endif
+
 
 Summary:        Python client for Vitrage REST API
 %{?python_provide:%python_provide python%{pyver}-%{pypi_name}}
