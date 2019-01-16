@@ -13,6 +13,7 @@
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %{!?py_req_cleanup: %global py_req_cleanup rm -rf {,test-}requirements.txt}
+%global with_doc 1
 
 %global common_desc \
 Python client for Vitrage REST API. Includes python library for Vitrage API \
@@ -67,6 +68,7 @@ Obsoletes: python2-%{pypi_name} < %{version}-%{release}
 %description -n python%{pyver}-%{pypi_name}
 %{common_desc}
 
+%if 0%{?with_doc}
 # Documentation package
 %package -n python-%{pypi_name}-doc
 Summary:       Documentation for python client for Vitrage REST API
@@ -77,6 +79,7 @@ BuildRequires: python%{pyver}-openstackdocstheme
 %description -n python-%{pypi_name}-doc
 Documentation for python client for Vitrage REST API. Includes python library
 for Vitrage API and Command Line Interface (CLI) library.
+%endif
 
 %package bash-completion
 Summary:        bash completion files for vitrage
@@ -96,11 +99,12 @@ This package contains bash completion files for vitrage.
 %build
 %{pyver_build}
 
+%if 0%{?with_doc}
 # generate html docs
 %{pyver_bin} setup.py build_sphinx -b html
 # remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
-
+%endif
 
 %install
 %{pyver_install}
@@ -125,9 +129,11 @@ export PYTHON=%{pyver_bin}
 %{_bindir}/vitrage
 %{_bindir}/vitrage-%{pyver}
 
+%if 0%{?with_doc}
 %files -n python-%{pypi_name}-doc
 %doc doc/build/html
 %license LICENSE
+%endif
 
 %files bash-completion
 %license LICENSE
