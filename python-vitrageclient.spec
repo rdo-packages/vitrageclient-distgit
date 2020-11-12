@@ -40,7 +40,7 @@ BuildRequires:  openstack-macros
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  python3-iso8601
 BuildRequires:  python3-mock
 BuildRequires:  python3-subunit
