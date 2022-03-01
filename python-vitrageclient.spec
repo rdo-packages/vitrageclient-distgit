@@ -57,7 +57,7 @@ Requires:       python3-iso8601
 Requires:       python3-keystoneauth1 >= 3.4.0
 Requires:       python3-pbr
 Requires:       python3-pydot
-Requires:       python3-osc-lib >= 1.10.0
+Requires:       python3-osc-lib >= 1.8.0
 Requires:       python3-oslo-utils >= 3.33.0
 Requires:       python3-oslo-log
 Requires:       python3-cliff >= 2.8.0
