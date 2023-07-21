@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7a1e076d_19f9d706",
+        "filename": "python-vitrageclient.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-07-21T08:10:22Z",
+      "side": 0,
+      "message": "oslo.log is not in requirements.txt whereas it\u0027s used at runtime [2], I think we should keep it.\nMaybe we should propose a patch upstream to add it.\n\n[1] https://github.com/openstack/python-vitrageclient/blob/master/requirements.txt\n[2] https://github.com/search?q\u003drepo%3Aopenstack%2Fpython-vitrageclient+oslo_log\u0026type\u003dcode",
+      "range": {
+        "startLine": 62,
+        "startChar": 0,
+        "endLine": 62,
+        "endChar": 32
+      },
+      "revId": "b3a6c5b2ec99858dcc61b2c4afdba26e9b85d6a8",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
