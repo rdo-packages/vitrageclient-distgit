@@ -47,9 +47,6 @@ BuildRequires:  python3-devel
 BuildRequires:  pyproject-rpm-macros
 BuildRequires:  git-core
 Requires:       %{name}-bash-completion = %{version}-%{release}
-# manual dep until https://review.opendev.org/c/openstack/python-vitrageclient/+/889156 is
-# merged and tagged.
-Requires:       python3-oslo-log
 
 Summary:        Python client for Vitrage REST API
 
