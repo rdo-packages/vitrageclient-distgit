@@ -29,6 +29,7 @@ Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{upstream_versio
 Source101:        https://tarballs.openstack.org/%{name}/%{name}-%{upstream_version}.tar.gz.asc
 Source102:        https://releases.openstack.org/_static/%{sources_gpg_sign}.txt
 %endif
+Patch0:         Revert_Reorder_DOT_DATA.patch
 
 BuildArch:      noarch
 
