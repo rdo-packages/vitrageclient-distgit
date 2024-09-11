@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c587af71_a7f4b536",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2024-09-11T13:28:06Z",
+      "side": 1,
+      "message": "The root cause is that out pydot (1.4.2 [1]) is too old.\nUpstream is currently 3.0.1 [2]\n\nLocal reproducer:\npodman run -it --rm quay.io/centos/centos:stream9\ndnf update -y\ndnf install -y epel-release\ndnf install -y \u0027dnf-command(config-manager)\u0027\ndnf config-manager --set-enabled crb\ndnf install -y ansible-core python3-tox vim less\ngit clone https://github.com/openstack/python-vitrageclient/\ncd python-vitrageclient/\ntox -e py39\n.tox/py39/bin/pip list | grep pydot\n.tox/py39/bin/pip install pydot\u003d\u003d1.4.2\ntox -e py39\n\nWe need to update pydot to at least 3.0.0.\nIn Fedora, it\u0027s still at 2.0.0 [3]\n\n\n[1] https://trunk.rdoproject.org/centos9-master/deps/latest/noarch/python3-pydot-1.4.2-1.el9s.noarch.rpm\n[2] https://github.com/openstack/requirements/blob/87aa7736536b4c721a94f6bfc9f13cff0591fe17/upper-constraints.txt#L184\n[3] https://src.fedoraproject.org/rpms/pydot",
+      "revId": "3285fa541a2ef4eeae5713581139590068c97cf2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
